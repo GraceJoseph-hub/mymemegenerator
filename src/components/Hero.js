@@ -1,9 +1,9 @@
 import React from "react";
-import {memeData} from "./memeData";
+import { memeData } from "./memeData";
 import "./styles/Hero.css";
 
 const Hero = (props) => {
-  const { img2} = props;
+  const { img2 } = props;
   const [imageState, setImageState] = React.useState({
     topText: "",
     bottomText: "",
@@ -11,21 +11,19 @@ const Hero = (props) => {
       "https://i.pinimg.com/originals/41/34/44/4134448ab2bdd84a8c52584c8026e767.jpg",
   });
 
-  const [newState] = React.useState(memeData)
-  
+  const [newState] = React.useState(memeData);
 
   function imageGenerator() {
     const memes = newState.data.memes;
     const randomNum = Math.floor(Math.random() * memes.length);
     const getUrl = memes[randomNum].url;
 
-    setImageState(imageState => {
+    setImageState((imageState) => {
       return {
         ...imageState,
-        randomImg: getUrl
-      }
-    })
-    
+        randomImg: getUrl,
+      };
+    });
   }
 
   return (
@@ -36,7 +34,7 @@ const Hero = (props) => {
       </div>
       <div className="randomImg-div">
         <div className="second-input" onClick={imageGenerator}>
-          <input type="text" placeholder="Get a new meme image" />
+          <button>Get a new meme image</button>
           <img src={img2} alt="" />
         </div>
         <img src={imageState.randomImg} alt="" className="random-img" />

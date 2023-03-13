@@ -32,19 +32,16 @@
   margin-top: 40px;
 }
 
-.second-input input{
+.second-input button{
   border: none;
   outline: none;
   background-color: #8ecbebc5;
   background: none;
-  cursor: pointer
-}
-
-
-.second-input ::placeholder{
+  cursor: pointer;
   color: white;
   font-size: 1rem;
 }
+
 
 
 .second-input img{
