@@ -1,5 +1,4 @@
 import React from "react";
-import memeData from "./memeData";
 import "./styles/Nav.css";
 
 const Nav = (props) => {
