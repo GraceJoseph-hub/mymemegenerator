@@ -1,5 +1,5 @@
 import React from "react";
-import memeData from "./memeData";
+import {memeData} from "./memeData";
 import "./styles/Hero.css";
 
 const Hero = (props) => {

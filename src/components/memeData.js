@@ -1,4 +1,4 @@
-export default {
+export const memeData = {
   'success' : true,
   'data' : {
     'memes' : [
