@@ -3,7 +3,7 @@ import memeData from "./memeData";
 import "./styles/Hero.css";
 
 const Hero = (props) => {
-  const { img2, img3 } = props;
+  const { img2} = props;
   const [imageState, setImageState] = React.useState({
     topText: "",
     bottomText: "",
@@ -11,7 +11,7 @@ const Hero = (props) => {
       "https://i.pinimg.com/originals/41/34/44/4134448ab2bdd84a8c52584c8026e767.jpg",
   });
 
-  const [newState, setNewState] = React.useState(memeData)
+  const [newState] = React.useState(memeData)
   
 
   function imageGenerator() {
