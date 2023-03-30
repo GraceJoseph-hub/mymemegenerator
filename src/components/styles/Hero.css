@@ -57,6 +57,28 @@
   align-items: center;
 }
 
+
+.text-imgContainer{
+  position: relative;
+}
+
+.text-container{
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text-container h2{
+  color: #8ecbebc5;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+
 .random-img{
   height: 500px;
   width: 500px;
