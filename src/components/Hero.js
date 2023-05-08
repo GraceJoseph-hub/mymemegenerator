@@ -11,15 +11,10 @@ const Hero = (props) => {
       "https://i.pinimg.com/originals/41/34/44/4134448ab2bdd84a8c52584c8026e767.jpg",
   });
 
-  const [allMemes, setAllMemes] = React.useState(memeData);
-  React.useEffect( () => {
-    fetch("https://api.imgflip.com/get_memes")
-    .then(resp => resp.json())
-    .then(data => setAllMemes(data))
-  }, [])
-  
+  const [newState] = React.useState(memeData);
+
   function imageGenerator() {
-    const memes = allMemes.data.memes;
+    const memes = newState.data.memes;
     const randomNum = Math.floor(Math.random() * memes.length);
     const getUrl = memes[randomNum].url;
 
